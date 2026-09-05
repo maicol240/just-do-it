@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Task Manager</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <aside></aside>
+      <form class="task-form">
+        <div class="form-field">
+          <label for="title">title</label>
+          <input
+            id="title"
+            name="title"
+            placeholder="title"
+            minlength="3"
+            required
+            type="text"
+          />
+        </div>
+        <div class="form-field">
+          <label for="due-date">due-date:</label
+          ><input name="due-date" id="due-date" type="date" />
+        </div>
+
+        <button type="submit">submit</button>
+      </form>
+      <ul class="task-list"></ul>
+    </main>
+  </body>
 </html>
